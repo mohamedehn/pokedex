@@ -1,1 +1,7 @@
-<p>pokedex-page works!</p>
+<!-- Le pokemon list est affiché dans pokedex component grâce à l'input. onSelectPokemon intervient grâce à 
+    l'output de pokemonlist qui déclenche un eventemitter lors du clique sur la card (pokemonlist html)-->
+    <div class="split">
+        <app-pokemon-list [pokemonList]="pokemons" class="appList" (selectPokemon)="onSelectPokemon($event)"></app-pokemon-list>
+        <!-- L'input de pokemon details permet lorsque l'on clique sur une carte pokémon d'afficher le détail des infos -->
+        <app-pokemon-detail [pokemon]="pokemonDetail"></app-pokemon-detail>
+    </div>

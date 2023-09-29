@@ -1,0 +1,21 @@
+.container{
+    width: 50%;
+    margin: auto;
+}
+
+.img{
+    width: 35%;
+}
+
+.name{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.description{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}

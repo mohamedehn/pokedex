@@ -1,1 +1,8 @@
-<p>pokemon-list works!</p>
+<!-- NgFor pour display tout la liste des pokémon sous ce format ci-dessous.
+A un client englobant l'ensemble de la card permettra d'afficher le détail d'un pokémon grâce à onSelect -->
+<div *ngFor="let pokemon of pokemonList" class="container">
+    <a class="card" href="#" (click)="onSelect(pokemon)">
+        <img src={{pokemon.image}} alt="" class="img">
+        <p class="name">{{pokemon.name}}</p>
+    </a>
+</div>

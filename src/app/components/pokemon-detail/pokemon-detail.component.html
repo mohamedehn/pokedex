@@ -1,1 +1,8 @@
-<p>pokemon-detail works!</p>
+<!-- NG if permet d'afficher tout la carte pokémon si l'on clique dessus via le onSelect de pokemonList -->
+<div *ngIf="pokemon" class="container"> 
+    <div class="card">
+        <img src={{pokemon.image}} alt="" class="img">
+        <p class="name">{{pokemon.name}}</p>
+        <p class="description">{{pokemon.description}}</p>
+    </div>
+</div>

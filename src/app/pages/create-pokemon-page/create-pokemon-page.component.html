@@ -1,1 +1,48 @@
-<p>create-pokemon-page works!</p>
+<div>
+    <h3>Pour ajouter un pokémon au pokedex, saisissez le formulaire ci-dessous</h3>
+    <form [formGroup]="pokemonForm" #myForm="ngForm" (ngSubmit)="onSubmit()">
+        <div>
+            <fieldset>
+                <label for="name">Nom</label>
+                <input type="text" formControlName="name" name="name">
+            </fieldset>
+        </div>
+        <!-- Message d'erreur du nom -->
+        <div>
+            <span *ngIf="formSubmitted && pokemonForm.controls.name.errors?.['required']">
+                Le nom du pokémon est requis
+            </span>
+        </div>
+        <div>
+            <fieldset>
+                <label for="image">Image</label>
+                <input type="text" formControlName="image" name="image">
+            </fieldset>
+        </div>
+        <!-- Message d'erreur de l'image -->
+        <div>
+            <span *ngIf="formSubmitted && pokemonForm.controls.image.errors?.['required']">
+                L'image du pokémon est obligatoire
+            </span>
+            <span *ngIf="formSubmitted && pokemonForm.controls.image.errors?.['urlInvalid']">
+                L'image doit être un lien http
+            </span>
+        </div>
+        <div>
+            <fieldset>
+                <label for="description">Description</label>
+                <input type="text" formControlName="description" name="description">
+            </fieldset>
+        </div>
+        <!-- Message d'erreur de la description -->
+        <div>
+            <span *ngIf="formSubmitted && pokemonForm.controls.description.errors?.['required']">
+                Une description est obligatoire
+            </span>
+        </div>
+        <div>
+            <span *ngIf="pokemonForm.valid">Le formulaire est complet, vous pouvez cliquer sur : </span>
+        </div>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>
