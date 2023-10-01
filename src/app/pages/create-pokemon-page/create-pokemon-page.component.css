@@ -1,0 +1,27 @@
+h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    margin-bottom: 50px;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+}
+
+div{
+    margin-bottom: 8px;
+    width: 75%;
+    margin: auto;
+}
+
+button{
+    margin-top: 8px;
+    margin-left: 52px;
+}
+
+fieldset{
+    justify-content: space-evenly;
+    display: flex;
+}

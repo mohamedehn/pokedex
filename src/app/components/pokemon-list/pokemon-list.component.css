@@ -1,10 +1,39 @@
 .container{
-    width: 50%;
+    width: 35%;
     margin: auto;
+    margin-top: 85px;
+}
+
+.container:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
+    animation: ease-in-out;
+    }
+
+.card{
+    text-decoration: none;
+    color: black;
+
 }
 
 .img{
     width: 35%;
+    margin: auto;
+    display: block;
+    border: 1px solid;
+    border-width: 2px;
+    border-bottom: white;
+    background-color: silver;
+}
+
+
+p{
+    margin: auto;
+    display: block;
+    border: 1px solid;
+    border-width: 2px;
+    background-color: antiquewhite;
 }
 
 .name{

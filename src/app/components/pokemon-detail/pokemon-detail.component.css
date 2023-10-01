@@ -1,0 +1,17 @@
+.container{
+    width: 80%;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    border: 1px solid;
+    border-width: 2px;
+    background-color: silver;
+}
+
+p{
+    text-align: justify;
+}

@@ -1,0 +1,28 @@
+
+
+ul {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+img{
+    width: 70px;
+    height: 72px;
+    align-self: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+}
